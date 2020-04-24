@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel = "stylesheet"
+  type = "text/css"
+  href = "style.css" />
+</head>
+<body>
+  <!--navigation bar -->
+    <ul>
+      <li><a href="index.html">about</a></li>
+      <li><a href="design.html">art & design</a></li>
+      <li><a href="code.html">web development</a></li>
+    </ul>
+<p style= "font-family:royalAcid;font-size: 100px; color: #C69C6D; padding-left: 5%; margin: 0px;"> web development </p>
+<p style = "padding-left: 5%;">
+  A collection of websites I helped to develop. It is important to note I am not in charge of maintaining these websites therefore changes may have been made upon closure of project.
+<br>
+  Skills: HTML5, CSS, Javascript, Wordpress
+  <br>
+  <br>
+  Trinity Grace Church
+  <br>
+  Modernized the website for Trinity Grace Church. Some features I implemented include a translation function and in site sermon play back.
+  The website can be viewed <a href = "https://trinity-grace.org/"> here</a>. 
+
+  <br>
+  <br>
+  Earnest Earth
+  <br>
+  A startup located in Urbana, Illinois that is seeking to recycle farm waste as fertilizer. The website can be from
+  <a href = "https://earneste.com/"> here</a>. Key elements displayed on this website include parallax scrolling, a contact form and testimonial slider.
+  <br>
+
+  <br>
+  EntepriseWorks Intern Website
+  <br>
+  Intern website used by all University of Illinois EnterpriseWorks Tech Incubator interns. The website can be from
+  <a href = "https://ewinterns.web.illinois.edu/wp/"> here</a>. I implemented a login and logout system and also created the base framework for the website.
+  <br>
+
+  <br>
+  Simbiosys
+  <br>
+  A medical tech startup company in the field of cancer treatment. The website can be from
+  <a href = "https://simbiosys.tech/"> here</a>. Noteworthy elements include the software page where I implemented and interactive human body.
+  <br>
+
+</p>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+
+  <div class="mySlides fade">
+    <img src="earnest.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="earnest2.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="ew1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="ew2.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="simbiosys.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="simbiosys2.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class = "footer">
+  <a href="https://www.linkedin.com/in/stacy-zeng1/">
+  <img src = "linkednLogo.png" height="50px" style = "padding: 20px;" alt = "linkedin logo">
+</a>
+<a href="https://github.com/smzeng/">
+  <img src = "githubLogo.png" height = "50px" style = "padding: 20px;" alt = "github logo">
+</a>
+</div>
+
+</body>
+</html>
